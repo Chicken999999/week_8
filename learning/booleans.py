@@ -4,7 +4,7 @@
 
 # Boolean expressions are commonly used for decision-making in programming.
 
-# Here's a breakdown with examples:
+# Here's a breakdown with examples: hello
 
 # 1. Comparison Operators:
 # These operators are used to compare two values:
