@@ -28,9 +28,6 @@
 
 # integer = 12
 
-# if integer >= 10 and <=20 = true then
-    #  print("The number is within the range.") 
-#
 
 
 # Problem 3: Password Strength Checker
@@ -47,10 +44,13 @@
 
 # Hint:
 # Use the len() function to check the length and the any() function with a generator expression to check for a digit.
-password = input("Type your password: ")
-length = list(password).len() > 8
-numbers = password.any(1-9)
-print(numbers)
+# password = input("Type your password: ")
+# length = len(tuple(password)) > 7
+# # this function checks if any character in the password string is a number, if so it returns true
+# digit_checker = [char.isdigit() for char in password]
+# print(length)
+# print(any(digit_checker)) 
+
 
 # Problem 4: Odd or Even and Multiple of 3
 # Description:
@@ -64,6 +64,18 @@ print(numbers)
 # "Odd but not a multiple of 3."
 # Hint:
 # Use % for both the even check and the multiple of 3 check.
+num = int(input("Input a number: "))
+even_or_false = num % 2 == 0
+multiple_of_three = num % 3 == 0 
+if even_or_false and multiple_of_three :
+    print("Even and a multiple of 3")
+elif even_or_false and not multiple_of_three:
+    print("Even but not a multiple of 3.")
+elif not even_or_false and multiple_of_three:
+    print("Odd and a multiple of 3.")
+elif not even_or_false and not multiple_of_three:
+    print("Odd but not a multiple of 3.")
+
 
 # Problem 5: Vowel or Consonant
 # Description:
