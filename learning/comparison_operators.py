@@ -80,8 +80,12 @@ import math
 
 #######################comparison operators challenge#####################
 # Challenge: Compare two numbers entered by the user and check if they are equal or not.
+
 # If they are not equal, print which one is greater.
 
 # Prompt the user for two numbers
-
+num1 = int(input("Input a number: "))
+num2 = int(input("Input another number: "))
 # Check for equality and greater number
+if num1 != num2:
+    print(max(num1, num2))

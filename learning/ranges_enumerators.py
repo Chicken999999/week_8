@@ -5,17 +5,21 @@
 # Range Practice #1
 # Create a list consisting of all the numbers from 2500 to 2585 (inclusive). Store this list in the variable my_list.
 
+# my_list = list(range(2500, 2586))
+# print(my_list)
 
 
-# Range Practice #2
-# Using the range() function, create in a single line of code a list consisting of all numbers that are multiples of 3 from 3 to 300 (inclusive). Store this list in the variable my_list.
+# # Range Practice #2
+# # Using the range() function, create in a single line of code a list consisting of all numbers that are multiples of 3 from 3 to 300 (inclusive). Store this list in the variable my_list.
 
-
+# my_list = list(range(3, 301, 3))
+# print(my_list)
 
 # Range Practice #3
 # Use the range() function and a loop to add the squares of all the numbers from 1 to 15 (inclusive). Store the result in a variable called sum_squares.
 
-
+# sum_squares = sum([x**2 for x in range(1, 16)])
+# print(sum_squares)
 
 # For this purpose:
 
@@ -28,6 +32,27 @@
 
 
 ##############################enumerators in python #####################################################
+# my_list = ["apples", "pears", "oranges", "fruits"]
+
+# for x, element in enumerate(my_list):
+#     print(x, element)
+#     if x == 1:
+#         print("X is 1")
+
+
+mynames = ["John", "Mike", "Anna", "Bob", "Sara"]
+
+# counter = 0 
+# for name in mynames:
+#     print(f"{counter}: {name}")
+#     counter += 1
+
+#Does the same thing
+# for index, name in enumerate(mynames):
+#     print(f"{index}: {name}")
+
+print(dict(enumerate(mynames)))
+
 
 
 # Enumerator Practice #1
@@ -39,15 +64,19 @@
 
 # list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
 
-# You can use the given print() line as an example and change its variable names, but the returned phrases must be the same!
+# for index, name in enumerate(list_names):
+#     print(f"{name} is found at index {index}")
 
-# Tip: use loops!
+# # You can use the given print() line as an example and change its variable names, but the returned phrases must be the same!
+
+# # Tip: use loops!
 
 # list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
 
-# print(f'{nombre} se encuentra en el índice {indice}')
+# # print(f'{nombre} se encuentra en el índice {indice}')
 
-
+# for indice, nombre in enumerate(list_names):
+#     print(f'{nombre} se encuentra en el índice {indice}')
 
 # Enumerator Practice #2
 # Create a list formed by the tuples (index, element), obtained through enumerating the indices of each character of the "Python" string.
@@ -56,6 +85,11 @@
 
 # "Python"
 
+mytuple = tuple("Python")
+
+for index, letter in enumerate(mytuple):
+    print(f'{letter} se encuentra en el índice {index}')
+print(mytuple)
 
 # Enumerator Practice #3
 # Print to the screen only the indices of those names in the list below, that start with M:
