@@ -1,6 +1,22 @@
+#zip (*iterables) = aggregate elements from two or more iterables (list, tuples, sets, etc.) It creates a zip object with paired elements store in tuples for each element
+
+usernames = ["Dude", "Bro", "Mister"]
+passwords = ("p@ssword", "abc123", "guest")
+
+users = zip(usernames, passwords)
 
 
+for i in users:
+    print(i)
 
+student_names = ["Steven", "Jackie", "Donna", "Kelso"]
+student_ids = [1000, 2333, 33445, 45556]
+student_ages = [22, 34, 45, 56]
+student_gpas = [3.0, 4.0, 3.5, 3.7]
+zipped_items = zip(student_names, student_ids, student_gpas)
+
+for i in zipped_items:
+    print(i)
 ######################################### zip in python############################################
 
 
